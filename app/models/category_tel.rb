@@ -1,0 +1,2 @@
+class CategoryTel < ApplicationRecord
+end

@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  street: MyString
+  street_number: MyString
+  city: MyString
+  province: MyString
+  zipcode: MyString
+  country: MyString
+  latitude: 1.5
+  longitude: 1.5
+  place: one
+  start_date: 2022-04-24 19:59:53
+  end_date: 2022-04-24 19:59:53
+  short_description: MyText
+  slug: MyString
+
+two:
+  name: MyString
+  description: MyText
+  street: MyString
+  street_number: MyString
+  city: MyString
+  province: MyString
+  zipcode: MyString
+  country: MyString
+  latitude: 1.5
+  longitude: 1.5
+  place: two
+  start_date: 2022-04-24 19:59:53
+  end_date: 2022-04-24 19:59:53
+  short_description: MyText
+  slug: MyString

@@ -1,0 +1,2 @@
+class Pocategory < ApplicationRecord
+end

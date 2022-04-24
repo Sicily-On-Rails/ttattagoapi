@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  slug: MyString
+  sluggable: one
+  sluggable_type: MyString
+  scope: MyString
+  locale: MyString
+
+two:
+  slug: MyString
+  sluggable: two
+  sluggable_type: MyString
+  scope: MyString
+  locale: MyString
