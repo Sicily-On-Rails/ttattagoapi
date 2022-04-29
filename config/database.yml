@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV["DATABASE" %>
+  database: <%= ENV["DATABASE"] %>
   username: <%= ENV["USERNAME"] %>
   password: <%= ENV["PASSWORD"] %>
   host: <%= ENV["HOST"]%>
