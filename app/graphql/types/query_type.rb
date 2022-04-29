@@ -7,6 +7,12 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
+    field :places, PlaceType, "Find all places" do 
+    end
+    def places()
+      Place.all
+    end
+
     field :place, PlaceType, "Find a place by id" do
       argument :id, ID 
     end
