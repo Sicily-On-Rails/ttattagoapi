@@ -9,7 +9,7 @@ module Types
 
     field :places, [Types::PlaceType], null: false
     def places
-      place.all
+      Place.all
     end
 
     field :place, PlaceType, "Find a place by id" do
