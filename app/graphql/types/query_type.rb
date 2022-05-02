@@ -7,8 +7,9 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    field :places, !types[Types::PlaceType] do
-      resolve ->(obj, _args, _ctx) { Place.all }
+    field :places, [Types::PlaceType], null: false
+    def places
+      place.all
     end
 
     field :place, PlaceType, "Find a place by id" do
