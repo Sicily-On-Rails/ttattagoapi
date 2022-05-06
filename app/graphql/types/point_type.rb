@@ -19,5 +19,6 @@ module Types
     field :short_description, String
     field :slug, String
     field :copyright, String
+    field :photos, [Types::PhotoType]
   end
 end
