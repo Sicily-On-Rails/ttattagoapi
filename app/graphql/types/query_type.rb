@@ -25,6 +25,13 @@ module Types
     def point(id:)
       Point.find(id)
     end
+
+    field :city, PlaceType, "Find a city by name" do
+      argument :name, String
+    end
+    def city(name:) 
+      Place.find_sole_by(city: name)
+    end
     
   end
 end

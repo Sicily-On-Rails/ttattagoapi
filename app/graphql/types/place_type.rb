@@ -11,6 +11,6 @@ module Types
     field :latitude, Float
     field :longitude, Float
     field :copyright, String
-    field :points, [Types::PointType]
+    field :points, [Types::PointType], null: false
   end
 end
