@@ -12,5 +12,6 @@ module Types
     field :longitude, Float
     field :copyright, String
     field :points, [Types::PointType], null: false
+    field :products, [Types::ProductType]
   end
 end
