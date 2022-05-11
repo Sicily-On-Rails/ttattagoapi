@@ -13,5 +13,15 @@ module Types
     field :copyright, String
     field :points, [Types::PointType], null: false
     field :products, [Types::ProductType]
+    field :activities, [Types::ActivityType]
+    
+    def activities
+      object.activities.where("end_date >= ?", DateTime.now())
+    end
+
+    def points
+      object.points.where("name IS NOT NULL")
+    end
+    
   end
 end
