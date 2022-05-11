@@ -21,5 +21,9 @@ module Types
     field :short_description, String
     field :slug, String
     field :photos, [Types::PhotoType]
+
+    def description
+      ActionView::Base.full_sanitizer.sanitize(object.description)
+    end
   end
 end
