@@ -15,6 +15,10 @@ module Types
     def name 
       ActionView::Base.full_sanitizer.sanitize(object.name)
     end
+
+    def description
+      ActionView::Base.full_sanitizer.sanitize(object.description)
+    end
     
   end
 end
