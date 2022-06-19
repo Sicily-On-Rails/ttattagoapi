@@ -32,6 +32,13 @@ module Types
     def city(name:) 
       Place.find_sole_by(city: name)
     end
+
+    field :activity, ActivityType, "Find an activity by id" do
+      argument :id, ID 
+    end
+    def activity(id:)
+      Activity.find(id)
+    end
     
   end
 end
