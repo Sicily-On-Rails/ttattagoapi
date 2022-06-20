@@ -40,5 +40,11 @@ module Types
       Activity.find(id)
     end
     
+    field :product, ProductType, "Find a product by id" do
+      argument :id, ID
+    end
+    def product(id:)
+      Product.find(id)
+    end 
   end
 end
