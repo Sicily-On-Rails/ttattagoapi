@@ -31,7 +31,7 @@ module Types
     end
     def city(name:) 
       #Place.find_sole_by(city: name)
-      city = Place.where('lower(city) = ?', name).first
+      city = Place.where('lower(city) = ?', name.downcase).first
     end
 
     field :activity, ActivityType, "Find an activity by id" do
