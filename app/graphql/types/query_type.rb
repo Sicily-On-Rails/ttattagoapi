@@ -30,7 +30,8 @@ module Types
       argument :name, String
     end
     def city(name:) 
-      Place.find_sole_by(city: name)
+      #Place.find_sole_by(city: name)
+      city = Place.where('lower(city) = ?', name).first
     end
 
     field :activity, ActivityType, "Find an activity by id" do
