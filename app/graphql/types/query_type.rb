@@ -47,5 +47,22 @@ module Types
     def product(id:)
       Product.find(id)
     end 
+
+    #resources with filters and pagination
+    field :productConnection, Types::ProductType.connection_type, null: false do
+      argument :ids, [String], required: false
+      argument :names, [String], required: false
+    end 
+    def productConnection(ids: nil, names: nil, **_args)
+      @result = Product.all
+      if (!ids.nil?)
+        @result = @result.where(id: ids)
+      end
+      if (!names.nil?)
+        @result = @result.where(name: names)
+      end
+      @result
+    end
+
   end
 end
